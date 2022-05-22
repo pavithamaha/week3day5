@@ -1,0 +1,62 @@
+1.Explain about the main method in java?
+
+The main() is the starting point for JVM to start execution of a Java program. Without the main() method, JVM will not execute the program.
+
+public: It is an access specifier. We should use a public keyword before the main() method.
+
+static: You can make a method static by using the keyword static.
+
+String args[]: The main() method also accepts some data from the user. It accepts a group of strings, which is called a string array.
+
+2.What are the different Control flow Statements available in java?
+
+1.Decision Making Statements 1.if statement 2.if-else statement 3.switch statement 2.Looping Statements 1.for loop 2.while loop 3.do- while loop 3.Branching Statements 1.continue statement 2.break statement 3.return statement
+
+3.What is the Difference betweeen break and continue statements?
+
+Break Statement: The Break statement is used to exit from the loop constructs.
+The break statement is usually used with the switch statement, and it can also use it within the while loop, do-while loop, or the for-loop. Continue statement: The continue statement is not used to exit from the loop constructs.
+
+The continue statement is not used with the switch statement, but it can be used within the while loop, do-while loop, or for-loop.
+
+4.What is an Array? How will you declare an array in java?
+
+An array is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created. After creation, its length is fixed.
+
+There are two ways you can declare and initialize an array in Java. The first is with the new keyword, where you have to initialize the values one by one. The second is by putting the values in curly braces.
+
+5.When will you get ArrayIndexOutOfBoundsException?
+
+The ArrayIndexOutOfBoundsException occurs whenever we are trying to access any item of an array at an index which is not present in the array. In other words, the index may be negative or exceed the size of an array.
+
+6.Define the Syntax to create an object for a class.
+
+When we create an instance of the class by using the new keyword, it allocates memory (heap) for the newly created object and also returns the reference of that object to that memory. The new keyword is also used to create an array. The syntax for creating an object is:
+
+ClassName object = new ClassName();
+
+What are the naming conventions to be followed while creating a class, method and a variable.Explain with examples.
+
+Java provides five ways to create an object.
+
+Using new Keyword Using clone() method Using newInstance() method of the Class class Using newInstance() method of the Constructor class Using Deserialization
+
+7.What is Variable?How will you declare a variables in java?
+
+Variable in Java is a data container that saves the data values during Java program execution.
+
+To declare (create) a variable, you will specify the type, leave at least one space, then the name for the variable and end the line with a semicolon ( ; ). Java uses the keyword int for integer, double for a floating point number (a double precision number), and boolean for a Boolean value (true or false).
+
+8.What is String in java? Is it a Data Type?
+
+In Java, string is basically an object that represents sequence of char values.
+
+The string data type is a non-primitive data type but it is predefined in java, some people also call it a special ninth primitive data type.
+
+9.What are the different ways to create the String Object in java?
+
+There are two ways to create a String object: By string literal : Java String literal is created by using double quotes. For Example: String s=“Welcome”; By new keyword : Java String is created by using a keyword “new”. For example: String s=new String(“Welcome”);
+
+10.What is the Difference between .Equals and ==?
+
+The main difference between the .equals() method and == operator is that one is a method, and the other is the operator. We can use == operators for reference comparison (address comparison) and .equals() method for content comparison. In simple words, == checks if both objects point to the same memory location whereas .equals() evaluates to the comparison of values in the objects.

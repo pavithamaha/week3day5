@@ -1,0 +1,51 @@
+1.What is Selenium? What are the different Selenium components? Explain about Selenium Webdriver.
+
+Selenium is an automation testing tool used to test web-based applications. Selenium is not a single tool but a suite of tools. There are four components of Selenium â€“ Selenium IDE, RC, WebDriver, and Grid Selenium WebDriver is a web framework that permits you to execute cross-browser tests. This tool is used for automating web-based application testing to verify that it performs expectedly.
+
+2.How does Selenium communicate with the Web browsers
+
+To communicate between server and client (browser), selenium web driver uses JSON. JSON Wire Protocol is a REST API that transfers the information between HTTP servers. Each Browser Driver has its own HTTP server.
+
+3.What are the locators available to find an element using Selenium?
+
+By CSS ID: find_element_by_id.
+By CSS class name: find_element_by_class_name.
+By name attribute: find_element_by_name.
+By DOM structure or xpath: find_element_by_xpath.
+By link text: find_element_by_link_text.
+By partial link text: find_element_by_partial_link_text.
+By HTML tagname:
+find_element_by_tag_name
+
+4.Why ID is preferable than X-Path?
+
+This is because : ID is considered as unique key so there cannot be more than 1 elements for same ID
+
+5.How to select value in dropdown?
+
+selectByVisibleText(String args) selectByIndex(String args) selectByValue(String args)
+
+6.Difference between absolute and relative path
+
+Absolute path: specifies the location of the root directory Starts with a delimiter character Content from other domain Use absolute URL Full path or file path
+
+Relative path: related to current directory location Never starts with a delimiting character Same domain content Relative URL used Path not absolute
+
+7.Difference between System.setProperty and webdrivermanager
+
+setProperty method is used to configure the browser driver path. The Selenium client library communicates with the ChromeDriver via the JSON Wire Protocol. The Chrome browser driver acts like a link between the Selenium implementation code and the Chrome browser.
+
+This is an efficient way to set driver binaries without having to actually download the driver binaries, you can just add the webdrivermanager dependency in your maven project (pom.xml) file and then set the driver binaries.
+
+8.Write the syntax for preceding and following x-paths
+
+Following xpath:
+//input[text()=' ']//following-sibling::input Preceeding xpath: //input[text=' ']//preceeding-sibling::label
+
+9.How to get an attribute value using Selenium WebDriver?
+
+String value = driver. findElement(by.id(â€œWeb element idâ€)). getAttribute(â€œAttribute nameâ€);
+
+10.How to get an attribute value using Selenium WebDriver?
+
+In order to check if a checkbox is checked or unchecked, we can used the isSelected() method over the checkbox element. The isSelected() method returns a boolean value of true if the checkbox is checked false otherwise.
